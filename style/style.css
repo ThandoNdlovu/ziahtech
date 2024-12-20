@@ -1,0 +1,557 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#banner{
+    background-image: linear-gradient(rgba(207, 195, 195, 0.5),#1F305E), url('/images/Shutterstock_1133982038.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh; 
+    overflow-y: auto;
+    /*clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);*/
+    }
+
+
+/*-----------NavBar----------*/
+.navbar-brand img{
+    width: 100px;
+}
+
+.offcanvas-title img{
+    width: 30%;
+}
+
+.navbar-nav li a{
+    color: black;
+    font-size: large;
+}
+
+.navbar-nav li a:hover{
+    transition: 0,5s;
+    color: #4CBB17;
+}
+
+.custom-navbar {
+    background: white;
+    border-bottom: 2px solid #EFEFEF; 
+    box-shadow: 0px 4px 10px rgba(85, 79, 82, 0.6); 
+    transition: background-color 0.3s ease, border-bottom 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/*-------------------------HOME SECTION-----------------------------*/
+
+.banner-text{
+    text-align: center;
+    padding-top: 320px;
+}
+
+.banner-text h1{
+    font-size: 90px;
+    font-weight: 600;
+}
+
+.banner-text .ziah{
+    color: #003262;
+}
+
+.banner-text .tech{
+    color:#4CBB17;
+}
+
+.banner-text h3{
+    color: #003262;
+}
+
+.banner-text h3{
+    font-size: 25px;
+    margin-top: -10px;
+}
+
+.banner-text .btn-get-in-touch{
+    align-items: center;
+}
+
+.banner-text p{
+    margin-bottom: 15px;
+    color: white;
+}
+
+.banner-btn{
+    margin: 70px auto 0;
+}
+
+.banner-btn a{
+    text-decoration: none;
+    width: 150px;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: white;
+    border: 0.5px solid white;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.banner-btn a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner-btn a:hover span{
+    width: 100%;
+}
+
+.banner-btn a:hover{
+    color: black;
+}
+
+/*--------------------------ABOUT US SECTION-----------------------------*/
+#about-us{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.title-text{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.title-text p{
+    margin:auto;
+    font-size: 20px;
+    color:#003262;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#1F305E,#ebf0e9);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius:35px;
+    border-bottom-right-radius:35px;
+}
+
+
+.title-text h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.about-us-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.about-us-details{
+    flex-basis: 50%;
+}
+
+.about-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.about-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+
+.about-us-details h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #1F305E;
+}
+
+.about-us-details h2{
+    font-weight: 300;
+    color: #1F305E;
+}
+
+.about-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.about-text p{
+    padding: 0 20px;
+    text-align: center;
+}
+
+.mission-icon img{
+   width: 50px;
+}
+/*----------Client List Section Css----------------*/
+
+.clients{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.clients h2{
+    color: #003262;
+}
+
+.clients p{
+    font-weight: 200;
+}
+
+
+.client-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.client-box img{
+    width: 20%;
+    margin-right: 10px;
+}
+
+/*-----------------------Services-----------------------------*/
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+}
+
+.card{
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    margin: 10px 4px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: 0.4s;
+}
+
+.card i{
+    margin: 20px;
+    color: #4CBB17;
+}
+
+.card h2{
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card p{
+    color: #6C757D;
+    text-align: center;
+}
+
+.card:hover i, 
+.card:hover p{
+    color: whitesmoke;
+}
+
+.card:hover h2{
+    font-weight: 500;
+}
+
+.card:nth-child(1):hover {
+    background-image: linear-gradient(rgba(207, 195, 195, 0.5),#1F305E), url('/images/Systems-Integration.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card:nth-child(2):hover {
+    background-image: linear-gradient(rgba(207, 195, 195, 0.5),#1F305E), url('/images/plant-maintenance.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card:nth-child(3):hover {
+    background-image: linear-gradient(rgba(207, 195, 195, 0.5),#1F305E), url('/images/electrical-engineering.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card:nth-child(4):hover {
+    background-image: linear-gradient(rgba(207, 195, 195, 0.5),#1F305E), url('/images/industrial-supplies.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*---------------------GET IN TOUCH -----------------------------*/
+#get-in-touch{
+    padding: 100px 0 20px;
+    background: #EFEFEF;
+    position: relative;
+}
+
+.get-in-touch-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.get-in-touch-left,.get-in-touch-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.get-in-touch-left form{
+    text-align: center;
+    width: 600px;
+}
+
+form .input-box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-box .input-field{
+    width: 48.5%;
+}
+
+.field .item{
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #003262;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: whitesmoke;
+    margin: 12px 0;
+}
+
+.field .item::placeholder{
+    color: rgb(255,255,255,0.3s);
+}
+
+form .textarea-field .item{
+    resize: none;
+}
+
+form button{
+    padding: 12px 32px;
+    background: #003262;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #003262;
+    font-size: 16px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.get-in-touch-right{
+    text-align: right;
+}
+
+.get-in-touch-right img{
+    margin-right: 10px;
+    width: 3%;
+}
+
+.get-in-touch-row h1{
+    margin: 10px 0;
+}
+
+.get-in-touch-row p{
+    line-height: 35px;
+}
+
+.get-in-touch-img{
+    max-width: 370px;
+    opacity: 0.2;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+}
+
+.copyright-text{
+    text-align: center;
+}
+
+
+/*----------------------------------------------------RESPONSIVE MEDIA SCREEN---------------------------------------------------*/
+@media (max-width: 991px) 
+{
+
+    .navbar-nav{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-text h1{
+        font-size: 44px;
+        font-weight: 600;
+    }
+
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+    .title-text h1{
+        font-size: 35px;
+    }
+    .about-us-details{
+        flex-basis: 100%;
+    }
+
+    .about-img{
+        flex-basis:100%;
+    }
+
+    .about-img img{
+        width: 100%;
+    }
+
+    .about-desc{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mission-icon{
+        margin-bottom: 20px;
+        flex-basis: 100%;
+    }
+
+    .clients p{
+        font-size: 13px;
+    }
+    
+
+    .client-box img{
+        width: 35%;
+        margin-right: 5px;
+    }
+
+    .content-box{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card{
+        min-width: 300px;
+        margin: 10px auto;
+    }
+
+    .input-box {
+        flex-direction: column; /* Make fields stack */
+    }
+
+    .input-field{
+        width: 100%; /* Make input fields full-width */
+    }
+
+    .input-box .input-field{
+        width: 100%;
+    }
+
+    /* Textarea half width */
+    .textarea-field {
+        width: 100%;
+    }
+
+    .get-in-touch-left form{
+        text-align: center;
+        width: 100%;
+    }
+
+    .get-in-touch-right img{
+        width: 20px;
+    }
+}
+
+
+
+@media (max-width: 770px) {
+
+/*-----------Home Section--------------*/
+
+.navbar-nav{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/*-------------about-----------------*/
+.title-text h1{
+    font-size: 35px;
+}
+.about-us-details{
+    flex-basis: 100%;
+}
+
+
+/*-----------get in touch--------------*/
+.get-in-touch-left,.get-in-touch-right{
+    flex-basis: 100%;
+    font-size: 14px;
+}
+
+.get-in-touch-img{
+    top: 25%;
+}
+}
+
+@media (max-width: 440px) {
+    .about-us-details{
+        flex-basis: 100%;
+    }
+    
+}
