@@ -10,7 +10,7 @@
 }
 
 #banner{
-    background-image: linear-gradient(rgba(207, 195, 195, 0.5),#1F305E), url('/images/Shutterstock_1133982038.jpg');
+    background-image: linear-gradient(rgba(207, 195, 195, 0.5),#1F305E), url('images/Shutterstock_1133982038.jpg');
     background-size: cover;
     background-position: center;
     height: 80vh; 
@@ -299,25 +299,25 @@
 }
 
 .card:nth-child(1):hover {
-    background-image: linear-gradient(rgba(207, 195, 195, 0.5),#1F305E), url('/images/Systems-Integration.jpg');
+    background-image: linear-gradient(rgba(207, 195, 195, 0.5),#1F305E), url('images/Systems-Integration.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .card:nth-child(2):hover {
-    background-image: linear-gradient(rgba(207, 195, 195, 0.5),#1F305E), url('/images/plant-maintenance.jpg');
+    background-image: linear-gradient(rgba(207, 195, 195, 0.5),#1F305E), url('images/plant-maintenance.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .card:nth-child(3):hover {
-    background-image: linear-gradient(rgba(207, 195, 195, 0.5),#1F305E), url('/images/electrical-engineering.jpg');
+    background-image: linear-gradient(rgba(207, 195, 195, 0.5),#1F305E), url('images/electrical-engineering.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .card:nth-child(4):hover {
-    background-image: linear-gradient(rgba(207, 195, 195, 0.5),#1F305E), url('/images/industrial-supplies.jpg');
+    background-image: linear-gradient(rgba(207, 195, 195, 0.5),#1F305E), url('images/industrial-supplies.jpg');
     background-size: cover;
     background-position: center;
 }
